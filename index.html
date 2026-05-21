@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>微架构 MicroArch — 用技术重塑商业价值</title>
-  <meta name="description" content="深圳市微架构科技有限公司 — 专业提供企业软件开发、移动应用、云原生架构、AI智能解决方案" />
+  <title>微架构 MicroArch — 智能基础设施的构建者</title>
+  <meta name="description" content="深圳市微架构科技有限公司 — 企业级智能基础设施、云原生架构、AI集成解决方案" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -12,277 +12,305 @@
 </head>
 <body>
 
-  <!-- ============================================================
-       NAVIGATION
-  ============================================================ -->
+  <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a href="#" class="nav__logo">
-        <span class="nav__logo-icon">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
-            <path d="M8 12 L16 8 L24 12 L24 20 L16 24 L8 20 Z" stroke="white" stroke-width="1.5" fill="none" opacity="0.9"/>
-            <path d="M16 8 L16 24" stroke="white" stroke-width="1.5" opacity="0.5"/>
-            <path d="M8 12 L24 12" stroke="white" stroke-width="1.5" opacity="0.5"/>
-            <circle cx="16" cy="16" r="2.5" fill="white"/>
-            <defs>
-              <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
-                <stop offset="0%" stop-color="#4f8ef7"/>
-                <stop offset="100%" stop-color="#7c3aed"/>
-              </linearGradient>
-            </defs>
+      <a href="#hero" class="nav__logo">
+        <span class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect width="28" height="28" rx="7" fill="#111418"/>
+            <path d="M7 10 L14 7 L21 10 L21 18 L14 21 L7 18 Z" stroke="#F4F1ED" stroke-width="1.4" fill="none"/>
+            <circle cx="14" cy="14" r="2" fill="#6AA8FF"/>
           </svg>
         </span>
-        <span class="nav__logo-cn">微架构</span>
-        <span class="nav__logo-en">MicroArch</span>
+        <span class="logo-text">微架构 <em>MicroArch</em></span>
       </a>
+
       <ul class="nav__links">
-        <li><a href="#hero" class="nav__link">首页</a></li>
-        <li><a href="#about" class="nav__link">关于我们</a></li>
-        <li><a href="#services" class="nav__link">服务</a></li>
-        <li><a href="#cases" class="nav__link">案例</a></li>
-        <li><a href="#contact" class="nav__link">联系我们</a></li>
+        <li><a href="#capabilities" class="nav__link">能力</a></li>
+        <li><a href="#architecture" class="nav__link">架构</a></li>
+        <li><a href="#ecosystem" class="nav__link">产品</a></li>
+        <li><a href="#partners" class="nav__link">合作伙伴</a></li>
       </ul>
-      <a href="#contact" class="btn btn--nav">立即咨询</a>
+
+      <a href="#cta" class="btn btn--dark">联系我们</a>
+
       <button class="nav__hamburger" id="hamburger" aria-label="菜单">
         <span></span><span></span><span></span>
       </button>
     </div>
+
     <div class="nav__mobile-menu" id="mobileMenu">
-      <a href="#hero" class="nav__mobile-link">首页</a>
-      <a href="#about" class="nav__mobile-link">关于我们</a>
-      <a href="#services" class="nav__mobile-link">服务</a>
-      <a href="#cases" class="nav__mobile-link">案例</a>
-      <a href="#contact" class="nav__mobile-link">联系我们</a>
-      <a href="#contact" class="btn btn--nav" style="margin-top:8px;">立即咨询</a>
+      <a href="#capabilities" class="nav__mobile-link">能力</a>
+      <a href="#architecture" class="nav__mobile-link">架构</a>
+      <a href="#ecosystem" class="nav__mobile-link">产品</a>
+      <a href="#partners" class="nav__mobile-link">合作伙伴</a>
+      <a href="#cta" class="btn btn--dark" style="margin-top:8px; align-self:flex-start;">联系我们</a>
     </div>
   </nav>
 
-  <!-- ============================================================
-       HERO SECTION
-  ============================================================ -->
+  <!-- HERO -->
   <section class="hero" id="hero">
-    <!-- Background elements -->
-    <div class="hero__bg">
-      <div class="hero__orb hero__orb--1"></div>
-      <div class="hero__orb hero__orb--2"></div>
-      <div class="hero__orb hero__orb--3"></div>
-      <div class="hero__grid"></div>
-    </div>
+    <div class="container hero__inner">
 
-    <!-- Floating geometric shapes -->
-    <div class="hero__shapes" aria-hidden="true">
-      <div class="shape shape--1"></div>
-      <div class="shape shape--2"></div>
-      <div class="shape shape--3"></div>
-      <div class="shape shape--4"></div>
-      <div class="shape shape--5"></div>
-      <div class="shape shape--6"></div>
-    </div>
+      <div class="hero__text">
+        <div class="hero__eyebrow fade-in">
+          <span class="dot"></span>
+          深圳市微架构科技有限公司
+        </div>
 
-    <div class="hero__content container">
-      <div class="hero__badge fade-in">
-        <span class="hero__badge-dot"></span>
-        深圳市微架构科技有限公司
-      </div>
-      <h1 class="hero__headline fade-in delay-1">
-        用技术<br/>
-        <span class="gradient-text">重塑商业价值</span>
-      </h1>
-      <p class="hero__sub fade-in delay-2" id="heroSub">
-        我们是一支充满激情的软件工程师团队，专注于为企业打造<br class="br-desktop"/>
-        高质量的数字化解决方案——从企业应用到 AI 驱动的智能系统。
-      </p>
-      <div class="hero__ctas fade-in delay-3">
-        <a href="#services" class="btn btn--primary">探索我们的服务</a>
-        <a href="#cases" class="btn btn--ghost">查看成功案例</a>
-      </div>
+        <h1 class="hero__headline fade-in delay-1">
+          构建下一代<br/>智能基础设施
+        </h1>
 
-      <!-- Stats -->
-      <div class="hero__stats fade-in delay-4">
-        <div class="stat">
-          <span class="stat__number" data-target="50">0</span>
-          <span class="stat__suffix">+</span>
-          <span class="stat__label">交付项目</span>
+        <p class="hero__sub fade-in delay-2">
+          我们为企业提供从底层架构到 AI 集成的全栈智能基础设施解决方案，
+          让技术成为持续增长的核心驱动力。
+        </p>
+
+        <div class="hero__actions fade-in delay-3">
+          <a href="#capabilities" class="btn btn--dark btn--lg">探索能力体系</a>
+          <a href="#demo" class="btn btn--outline btn--lg">查看演示</a>
         </div>
-        <div class="stat__divider"></div>
-        <div class="stat">
-          <span class="stat__number" data-target="30">0</span>
-          <span class="stat__suffix">+</span>
-          <span class="stat__label">核心团队</span>
-        </div>
-        <div class="stat__divider"></div>
-        <div class="stat">
-          <span class="stat__number" data-target="5">0</span>
-          <span class="stat__suffix">+</span>
-          <span class="stat__label">年行业经验</span>
-        </div>
-        <div class="stat__divider"></div>
-        <div class="stat">
-          <span class="stat__number" data-target="99">0</span>
-          <span class="stat__suffix">%</span>
-          <span class="stat__label">客户满意度</span>
+
+        <div class="hero__metrics fade-in delay-4">
+          <div class="metric">
+            <span class="metric__val">50+</span>
+            <span class="metric__lbl">交付项目</span>
+          </div>
+          <div class="metric__sep"></div>
+          <div class="metric">
+            <span class="metric__val">30+</span>
+            <span class="metric__lbl">工程师</span>
+          </div>
+          <div class="metric__sep"></div>
+          <div class="metric">
+            <span class="metric__val">99%</span>
+            <span class="metric__lbl">客户满意度</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="hero__scroll-indicator">
-      <span>向下滚动</span>
-      <div class="hero__scroll-arrow"></div>
+      <!-- Architecture visualization -->
+      <div class="hero__viz fade-in delay-2" aria-hidden="true">
+        <svg class="arch-svg" viewBox="0 0 480 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- Connection lines (drawn before nodes so they appear behind) -->
+          <!-- Web → Gateway -->
+          <line x1="120" y1="82" x2="200" y2="150" stroke="#6AA8FF" stroke-width="1" stroke-dasharray="6 4" class="viz-line"/>
+          <!-- Mobile → Gateway -->
+          <line x1="360" y1="82" x2="280" y2="150" stroke="#6AA8FF" stroke-width="1" stroke-dasharray="6 4" class="viz-line"/>
+          <!-- Gateway → Service A -->
+          <line x1="200" y1="200" x2="120" y2="268" stroke="#6AA8FF" stroke-width="1" stroke-dasharray="6 4" class="viz-line"/>
+          <!-- Gateway → Service B -->
+          <line x1="240" y1="200" x2="240" y2="268" stroke="#6AA8FF" stroke-width="1" stroke-dasharray="6 4" class="viz-line"/>
+          <!-- Gateway → AI Engine -->
+          <line x1="280" y1="200" x2="360" y2="268" stroke="#6AA8FF" stroke-width="1" stroke-dasharray="6 4" class="viz-line"/>
+          <!-- Services → Data -->
+          <line x1="120" y1="318" x2="200" y2="368" stroke="#6AA8FF" stroke-width="1" stroke-dasharray="6 4" class="viz-line"/>
+          <line x1="240" y1="318" x2="240" y2="368" stroke="#6AA8FF" stroke-width="1" stroke-dasharray="6 4" class="viz-line"/>
+          <line x1="360" y1="318" x2="280" y2="368" stroke="#6AA8FF" stroke-width="1" stroke-dasharray="6 4" class="viz-line"/>
+
+          <!-- Animated data dots -->
+          <circle r="3.5" fill="#6AA8FF" opacity="0.9">
+            <animateMotion dur="2.2s" repeatCount="indefinite" begin="0s">
+              <mpath href="#path-web-gw"/>
+            </animateMotion>
+          </circle>
+          <circle r="3.5" fill="#6AA8FF" opacity="0.9">
+            <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.6s">
+              <mpath href="#path-mob-gw"/>
+            </animateMotion>
+          </circle>
+          <circle r="3" fill="#6AA8FF" opacity="0.7">
+            <animateMotion dur="1.9s" repeatCount="indefinite" begin="0.3s">
+              <mpath href="#path-gw-sa"/>
+            </animateMotion>
+          </circle>
+          <circle r="3" fill="#6AA8FF" opacity="0.7">
+            <animateMotion dur="2.1s" repeatCount="indefinite" begin="0.9s">
+              <mpath href="#path-gw-sb"/>
+            </animateMotion>
+          </circle>
+          <circle r="3" fill="#6AA8FF" opacity="0.7">
+            <animateMotion dur="2.3s" repeatCount="indefinite" begin="0.1s">
+              <mpath href="#path-gw-ai"/>
+            </animateMotion>
+          </circle>
+          <circle r="2.5" fill="#6AA8FF" opacity="0.6">
+            <animateMotion dur="2s" repeatCount="indefinite" begin="1.1s">
+              <mpath href="#path-sa-db"/>
+            </animateMotion>
+          </circle>
+          <circle r="2.5" fill="#6AA8FF" opacity="0.6">
+            <animateMotion dur="1.8s" repeatCount="indefinite" begin="0.5s">
+              <mpath href="#path-sb-db"/>
+            </animateMotion>
+          </circle>
+
+          <!-- Path defs for animateMotion -->
+          <defs>
+            <path id="path-web-gw" d="M120 82 L200 150"/>
+            <path id="path-mob-gw" d="M360 82 L280 150"/>
+            <path id="path-gw-sa" d="M200 200 L120 268"/>
+            <path id="path-gw-sb" d="M240 200 L240 268"/>
+            <path id="path-gw-ai" d="M280 200 L360 268"/>
+            <path id="path-sa-db" d="M120 318 L200 368"/>
+            <path id="path-sb-db" d="M240 318 L240 368"/>
+          </defs>
+
+          <!-- Node: Web Client -->
+          <g class="viz-node viz-node--entrance" style="--delay:0ms">
+            <rect x="50" y="28" width="140" height="54" rx="12" fill="white" stroke="rgba(17,20,24,0.1)" stroke-width="1"/>
+            <text x="120" y="50" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(17,20,24,0.45)" letter-spacing="0.08em">CLIENT</text>
+            <text x="120" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#111418">Web Browser</text>
+          </g>
+
+          <!-- Node: Mobile Client -->
+          <g class="viz-node viz-node--entrance" style="--delay:80ms">
+            <rect x="290" y="28" width="140" height="54" rx="12" fill="white" stroke="rgba(17,20,24,0.1)" stroke-width="1"/>
+            <text x="360" y="50" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(17,20,24,0.45)" letter-spacing="0.08em">CLIENT</text>
+            <text x="360" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#111418">Mobile App</text>
+          </g>
+
+          <!-- Node: API Gateway (highlighted) -->
+          <g class="viz-node viz-node--entrance" style="--delay:160ms">
+            <rect x="150" y="148" width="180" height="54" rx="12" fill="#111418" stroke="rgba(17,20,24,0.1)" stroke-width="1"/>
+            <text x="240" y="170" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(244,241,237,0.5)" letter-spacing="0.08em">GATEWAY</text>
+            <text x="240" y="188" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#F4F1ED">API Gateway</text>
+          </g>
+
+          <!-- Node: Service Cluster -->
+          <g class="viz-node viz-node--entrance" style="--delay:240ms">
+            <rect x="50" y="268" width="140" height="52" rx="12" fill="white" stroke="rgba(106,168,255,0.3)" stroke-width="1"/>
+            <text x="120" y="290" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(17,20,24,0.45)" letter-spacing="0.08em">SERVICE</text>
+            <text x="120" y="308" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#111418">微服务集群</text>
+          </g>
+
+          <!-- Node: Middleware -->
+          <g class="viz-node viz-node--entrance" style="--delay:300ms">
+            <rect x="170" y="268" width="140" height="52" rx="12" fill="white" stroke="rgba(106,168,255,0.3)" stroke-width="1"/>
+            <text x="240" y="290" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(17,20,24,0.45)" letter-spacing="0.08em">RUNTIME</text>
+            <text x="240" y="308" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#111418">中间件层</text>
+          </g>
+
+          <!-- Node: AI Engine (accent) -->
+          <g class="viz-node viz-node--entrance" style="--delay:360ms">
+            <rect x="290" y="268" width="140" height="52" rx="12" fill="rgba(106,168,255,0.12)" stroke="rgba(106,168,255,0.4)" stroke-width="1"/>
+            <text x="360" y="290" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#6AA8FF" letter-spacing="0.08em">ENGINE</text>
+            <text x="360" y="308" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#111418">AI 推理层</text>
+          </g>
+
+          <!-- Node: Data Platform -->
+          <g class="viz-node viz-node--entrance" style="--delay:440ms">
+            <rect x="150" y="366" width="180" height="46" rx="12" fill="white" stroke="rgba(17,20,24,0.1)" stroke-width="1"/>
+            <text x="240" y="386" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="rgba(17,20,24,0.45)" letter-spacing="0.08em">STORAGE</text>
+            <text x="240" y="403" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#111418">数据平台</text>
+          </g>
+
+        </svg>
+      </div>
+
     </div>
   </section>
 
-  <!-- ============================================================
-       SERVICES SECTION
-  ============================================================ -->
-  <section class="services" id="services">
+  <!-- CORE CAPABILITIES -->
+  <section class="section capabilities" id="capabilities">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-tag">我们的服务</span>
-        <h2 class="section-title">全栈技术能力<br/><span class="gradient-text">覆盖您的每个需求</span></h2>
-        <p class="section-sub">从构思到上线，我们提供端到端的软件开发与技术咨询服务，助力企业在数字化时代保持竞争优势。</p>
+        <span class="eyebrow">核心能力</span>
+        <h2 class="section-title">为企业级复杂性<br/>而生的技术体系</h2>
+        <p class="section-sub">我们构建的不是工具，而是能够随业务持续演进的智能基础设施。</p>
       </div>
 
-      <div class="services__grid">
+      <div class="caps-grid">
 
-        <!-- Card 1 -->
-        <div class="service-card fade-in delay-1" data-glow="blue">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
-              <path d="M4 16H44" stroke="currentColor" stroke-width="2"/>
-              <circle cx="10" cy="12" r="1.5" fill="currentColor"/>
-              <circle cx="16" cy="12" r="1.5" fill="currentColor"/>
-              <circle cx="22" cy="12" r="1.5" fill="currentColor"/>
-              <path d="M14 26 L20 22 L26 26 L32 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <rect x="12" y="30" width="8" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/>
-              <rect x="28" y="30" width="8" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/>
+        <div class="cap-card fade-in delay-1">
+          <div class="cap-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M8 21H16M12 17V21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M7 10L10 13L17 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3 class="service-card__title">企业软件开发</h3>
-          <p class="service-card__desc">量身定制的 ERP、CRM 及内部管理系统，深度整合业务流程，提升运营效率。</p>
-          <div class="service-card__tags">
-            <span>ERP</span><span>CRM</span><span>OA 系统</span>
-          </div>
-          <div class="service-card__arrow">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3 class="cap-card__title">企业智能系统</h3>
+          <p class="cap-card__desc">深度定制的 ERP、CRM 及业务中台，将复杂的企业流程转化为清晰的数字化能力。</p>
+          <div class="cap-card__tags">
+            <span>ERP</span><span>CRM</span><span>业务中台</span>
           </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="service-card fade-in delay-2" data-glow="cyan">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="14" y="4" width="20" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
-              <path d="M14 10H34" stroke="currentColor" stroke-width="2"/>
-              <path d="M14 38H34" stroke="currentColor" stroke-width="2"/>
-              <circle cx="24" cy="41" r="1.5" fill="currentColor"/>
-              <rect x="18" y="15" width="12" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M20 27H28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M21 31H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <div class="cap-card fade-in delay-2">
+          <div class="cap-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L20 7V17L12 22L4 17V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M12 2V22M4 7L20 17M20 7L4 17" stroke="currentColor" stroke-width="1.4" opacity="0.4"/>
             </svg>
           </div>
-          <h3 class="service-card__title">移动应用开发</h3>
-          <p class="service-card__desc">iOS / Android 原生及跨平台 App，流畅的用户体验与高性能表现，助您触达更多用户。</p>
-          <div class="service-card__tags">
-            <span>iOS</span><span>Android</span><span>Flutter</span>
-          </div>
-          <div class="service-card__arrow">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="service-card fade-in delay-3" data-glow="purple">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="24" cy="18" rx="16" ry="6" stroke="currentColor" stroke-width="2"/>
-              <path d="M8 18 C8 18 8 30 24 30 C40 30 40 18 40 18" stroke="currentColor" stroke-width="2"/>
-              <path d="M8 24 C8 24 8 36 24 36 C40 36 40 24 40 24" stroke="currentColor" stroke-width="2"/>
-              <circle cx="24" cy="18" r="3" fill="currentColor" opacity="0.7"/>
-              <path d="M24 12 L24 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M30 14 L34 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M18 14 L14 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 class="service-card__title">云原生架构</h3>
-          <p class="service-card__desc">基于 Kubernetes 与微服务的云原生解决方案，弹性伸缩，高可用，让基础设施跟上业务速度。</p>
-          <div class="service-card__tags">
+          <h3 class="cap-card__title">云原生基础设施</h3>
+          <p class="cap-card__desc">基于 Kubernetes 的弹性微服务架构，服务网格，DevOps 流水线，让基础设施跟上业务节奏。</p>
+          <div class="cap-card__tags">
             <span>Kubernetes</span><span>微服务</span><span>DevOps</span>
           </div>
-          <div class="service-card__arrow">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+
+        <div class="cap-card fade-in delay-3">
+          <div class="cap-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M5.636 5.636l2.122 2.122M16.243 16.243l2.121 2.121M5.636 18.364l2.122-2.121M16.243 7.757l2.121-2.121" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 class="cap-card__title">AI 集成引擎</h3>
+          <p class="cap-card__desc">大模型接入、RAG 知识库、智能体工作流——将 AI 能力无缝嵌入您的核心业务系统。</p>
+          <div class="cap-card__tags">
+            <span>LLM</span><span>RAG</span><span>AI Agent</span>
           </div>
         </div>
 
-        <!-- Card 4 -->
-        <div class="service-card fade-in delay-1" data-glow="blue">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
-              <path d="M24 14 L24 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M24 38 L24 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M10 24 L6 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M42 24 L38 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.4"/>
-              <path d="M18 18 L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M30 30 L34 34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M30 18 L34 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M18 30 L14 34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <div class="cap-card fade-in delay-1">
+          <div class="cap-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <ellipse cx="12" cy="5" rx="9" ry="3" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M3 5v6c0 1.657 4.03 3 9 3s9-1.343 9-3V5" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M3 11v6c0 1.657 4.03 3 9 3s9-1.343 9-3v-6" stroke="currentColor" stroke-width="1.6"/>
             </svg>
           </div>
-          <h3 class="service-card__title">AI 智能解决方案</h3>
-          <p class="service-card__desc">大模型集成、智能推荐、计算机视觉与 NLP，将人工智能的力量注入您的核心业务。</p>
-          <div class="service-card__tags">
-            <span>LLM</span><span>NLP</span><span>CV</span>
-          </div>
-          <div class="service-card__arrow">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3 class="cap-card__title">数据智能平台</h3>
+          <p class="cap-card__desc">实时数仓、流批一体计算、BI 可视化——让每一个数据点都成为决策的依据。</p>
+          <div class="cap-card__tags">
+            <span>数仓</span><span>实时计算</span><span>BI</span>
           </div>
         </div>
 
-        <!-- Card 5 -->
-        <div class="service-card fade-in delay-2" data-glow="cyan">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="6" y="28" width="8" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
-              <rect x="20" y="20" width="8" height="22" rx="2" stroke="currentColor" stroke-width="2"/>
-              <rect x="34" y="10" width="8" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
-              <path d="M10 22 L24 16 L38 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="10" cy="22" r="2.5" fill="currentColor"/>
-              <circle cx="24" cy="16" r="2.5" fill="currentColor"/>
-              <circle cx="38" cy="8" r="2.5" fill="currentColor"/>
+        <div class="cap-card fade-in delay-2">
+          <div class="cap-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="7" y="2" width="10" height="20" rx="3" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M7 7h10M7 17h10" stroke="currentColor" stroke-width="1.4" opacity="0.5"/>
+              <circle cx="12" cy="19" r="1" fill="currentColor"/>
             </svg>
           </div>
-          <h3 class="service-card__title">大数据平台</h3>
-          <p class="service-card__desc">海量数据采集、存储、分析与可视化，构建数据驱动的决策体系，让数据成为核心资产。</p>
-          <div class="service-card__tags">
-            <span>数据仓库</span><span>实时计算</span><span>可视化</span>
-          </div>
-          <div class="service-card__arrow">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3 class="cap-card__title">移动端解决方案</h3>
+          <p class="cap-card__desc">iOS / Android 原生及 Flutter 跨平台开发，高性能、高保真的移动端体验。</p>
+          <div class="cap-card__tags">
+            <span>iOS</span><span>Android</span><span>Flutter</span>
           </div>
         </div>
 
-        <!-- Card 6 -->
-        <div class="service-card fade-in delay-3" data-glow="purple">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="14" r="6" stroke="currentColor" stroke-width="2"/>
-              <circle cx="10" cy="36" r="5" stroke="currentColor" stroke-width="2"/>
-              <circle cx="38" cy="36" r="5" stroke="currentColor" stroke-width="2"/>
-              <path d="M18 18 L13 31" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M30 18 L35 31" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M15 36 L33 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <div class="cap-card fade-in delay-3">
+          <div class="cap-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L3 7l9 5 9-5-9-5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M3 12l9 5 9-5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M3 17l9 5 9-5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3 class="service-card__title">技术咨询</h3>
-          <p class="service-card__desc">资深架构师团队提供技术选型、架构评审、性能优化与数字化转型战略咨询服务。</p>
-          <div class="service-card__tags">
-            <span>架构评审</span><span>技术选型</span><span>转型战略</span>
-          </div>
-          <div class="service-card__arrow">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3 class="cap-card__title">架构咨询服务</h3>
+          <p class="cap-card__desc">资深架构师提供技术选型、架构审计、性能调优与数字化转型路线图规划。</p>
+          <div class="cap-card__tags">
+            <span>架构审计</span><span>技术选型</span><span>转型规划</span>
           </div>
         </div>
 
@@ -290,482 +318,314 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       ABOUT SECTION
-  ============================================================ -->
-  <section class="about" id="about">
+  <!-- TECHNOLOGY ARCHITECTURE -->
+  <section class="section architecture" id="architecture">
     <div class="container">
-      <div class="about__inner">
-        <!-- Left: Text -->
-        <div class="about__text fade-in">
-          <span class="section-tag">关于我们</span>
-          <h2 class="section-title">我们是谁，<br/><span class="gradient-text">我们相信什么</span></h2>
-          <p class="about__desc">深圳市微架构科技有限公司成立于深圳，这座中国的科技创新中心。我们由一群对技术充满热情的工程师和创业者共同创立，致力于用卓越的工程实践帮助企业构建下一代数字化产品。</p>
-          <p class="about__desc">从初创团队到上市企业，我们服务过各类规模的客户，深刻理解每个项目背后的商业逻辑与技术挑战。</p>
-          <div class="about__values">
-            <div class="value-item">
-              <div class="value-icon">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </div>
-              <div>
-                <h4>卓越工程</h4>
-                <p>代码是我们的产品，质量是我们的承诺</p>
-              </div>
+      <div class="arch-inner">
+        <div class="arch-text fade-in">
+          <span class="eyebrow">技术架构</span>
+          <h2 class="section-title" style="text-align:left;">分层解耦，<br/>纵向贯通</h2>
+          <p class="section-sub" style="text-align:left; max-width:420px;">
+            每一层都经过精心设计，既相互独立可替换，又协同形成完整的闭环。
+            这是我们交付可持续演进系统的核心原则。
+          </p>
+          <div class="arch-principles">
+            <div class="principle">
+              <span class="principle__dot"></span>
+              <span>接口标准化，降低层间耦合</span>
             </div>
-            <div class="value-item">
-              <div class="value-icon">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-              </div>
-              <div>
-                <h4>客户第一</h4>
-                <p>深入理解业务，交付超越期望的解决方案</p>
-              </div>
+            <div class="principle">
+              <span class="principle__dot"></span>
+              <span>可观测性内嵌每一层</span>
             </div>
-            <div class="value-item">
-              <div class="value-icon">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </div>
-              <div>
-                <h4>持续创新</h4>
-                <p>拥抱新技术，在变化中寻找机遇</p>
-              </div>
+            <div class="principle">
+              <span class="principle__dot"></span>
+              <span>安全策略贯穿全栈</span>
             </div>
-            <div class="value-item">
-              <div class="value-icon">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/><path d="M2 12H22" stroke="currentColor" stroke-width="2"/><path d="M12 2C9.33333 4.66667 8 8 8 12C8 16 9.33333 19.3333 12 22C14.6667 19.3333 16 16 16 12C16 8 14.6667 4.66667 12 2Z" stroke="currentColor" stroke-width="2"/></svg>
-              </div>
-              <div>
-                <h4>开放透明</h4>
-                <p>坦诚沟通，让每个决策都有据可依</p>
-              </div>
+            <div class="principle">
+              <span class="principle__dot"></span>
+              <span>弹性扩展，按需部署</span>
             </div>
           </div>
         </div>
 
-        <!-- Right: Animated Code / Architecture Visual -->
-        <div class="about__visual fade-in delay-2">
-          <div class="code-window">
-            <div class="code-window__header">
-              <span class="code-window__dot dot--red"></span>
-              <span class="code-window__dot dot--yellow"></span>
-              <span class="code-window__dot dot--green"></span>
-              <span class="code-window__title">microarch.config.ts</span>
-            </div>
-            <div class="code-window__body" id="codeBlock">
-              <div class="code-line"><span class="c-purple">import</span> <span class="c-blue">{ MicroArch }</span> <span class="c-purple">from</span> <span class="c-green">'@microarch/core'</span><span class="c-white">;</span></div>
-              <div class="code-line"><span class="c-white">&nbsp;</span></div>
-              <div class="code-line"><span class="c-purple">const</span> <span class="c-cyan">config</span> <span class="c-white">=</span> <span class="c-blue">MicroArch</span><span class="c-white">.</span><span class="c-yellow">create</span><span class="c-white">({</span></div>
-              <div class="code-line"><span class="c-white">&nbsp;&nbsp;</span><span class="c-cyan">company</span><span class="c-white">:</span> <span class="c-green">'深圳市微架构科技'</span><span class="c-white">,</span></div>
-              <div class="code-line"><span class="c-white">&nbsp;&nbsp;</span><span class="c-cyan">services</span><span class="c-white">: [</span></div>
-              <div class="code-line"><span class="c-white">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c-green">'enterprise'</span><span class="c-white">,</span></div>
-              <div class="code-line"><span class="c-white">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c-green">'cloud-native'</span><span class="c-white">,</span></div>
-              <div class="code-line"><span class="c-white">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c-green">'ai-solutions'</span><span class="c-white">,</span></div>
-              <div class="code-line"><span class="c-white">&nbsp;&nbsp;</span><span class="c-white">],</span></div>
-              <div class="code-line"><span class="c-white">&nbsp;&nbsp;</span><span class="c-cyan">quality</span><span class="c-white">:</span> <span class="c-green">'world-class'</span><span class="c-white">,</span></div>
-              <div class="code-line"><span class="c-white">&nbsp;&nbsp;</span><span class="c-cyan">delivery</span><span class="c-white">:</span> <span class="c-blue">Promise</span><span class="c-white">.</span><span class="c-yellow">resolve</span><span class="c-white">(</span><span class="c-green">'on-time'</span><span class="c-white">),</span></div>
-              <div class="code-line"><span class="c-white">});</span></div>
-              <div class="code-line"><span class="c-white">&nbsp;</span></div>
-              <div class="code-line"><span class="c-purple">export default</span> <span class="c-cyan">config</span><span class="c-white">;</span></div>
-              <div class="code-cursor"></div>
+        <div class="arch-stack fade-in delay-2">
+          <div class="stack-layer stack-layer--1">
+            <div class="stack-layer__label">表现层</div>
+            <div class="stack-layer__content">
+              <span>Web</span>
+              <span>Mobile</span>
+              <span>Mini App</span>
+              <span>OpenAPI</span>
             </div>
           </div>
-
-          <!-- Architecture diagram nodes -->
-          <div class="arch-diagram">
-            <div class="arch-node arch-node--center">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/></svg>
-              <span>Core</span>
+          <div class="stack-arrow">↓</div>
+          <div class="stack-layer stack-layer--2">
+            <div class="stack-layer__label">网关层</div>
+            <div class="stack-layer__content">
+              <span>API Gateway</span>
+              <span>Auth &amp; Rate Limit</span>
+              <span>Load Balancer</span>
             </div>
-            <div class="arch-node arch-node--1">
-              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21H16M12 17V21" stroke="currentColor" stroke-width="2"/></svg>
-              <span>UI</span>
+          </div>
+          <div class="stack-arrow">↓</div>
+          <div class="stack-layer stack-layer--3">
+            <div class="stack-layer__label">服务层</div>
+            <div class="stack-layer__content">
+              <span>Business Services</span>
+              <span>AI Engine</span>
+              <span>Workflow Runtime</span>
+              <span>Event Bus</span>
             </div>
-            <div class="arch-node arch-node--2">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"/></svg>
-              <span>API</span>
+          </div>
+          <div class="stack-arrow">↓</div>
+          <div class="stack-layer stack-layer--4">
+            <div class="stack-layer__label">数据层</div>
+            <div class="stack-layer__content">
+              <span>OLTP</span>
+              <span>OLAP</span>
+              <span>Vector DB</span>
+              <span>Cache</span>
             </div>
-            <div class="arch-node arch-node--3">
-              <svg viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="5" rx="9" ry="3" stroke="currentColor" stroke-width="2"/><path d="M3 5V19C3 20.657 7.029 22 12 22C16.971 22 21 20.657 21 19V5" stroke="currentColor" stroke-width="2"/></svg>
-              <span>DB</span>
+          </div>
+          <div class="stack-arrow">↓</div>
+          <div class="stack-layer stack-layer--5">
+            <div class="stack-layer__label">基础设施层</div>
+            <div class="stack-layer__content">
+              <span>Kubernetes</span>
+              <span>Service Mesh</span>
+              <span>Observability</span>
             </div>
-            <div class="arch-node arch-node--4">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M18 10H6C4.343 10 3 11.343 3 13V19C3 20.657 4.343 22 6 22H18C19.657 22 21 20.657 21 19V13C21 11.343 19.657 10 18 10Z" stroke="currentColor" stroke-width="2"/><path d="M12 14V18M8 2L12 6L16 2" stroke="currentColor" stroke-width="2"/></svg>
-              <span>AI</span>
-            </div>
-            <svg class="arch-lines" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="100" y1="100" x2="100" y2="30" stroke="url(#lineGrad)" stroke-width="1" stroke-dasharray="4 3"/>
-              <line x1="100" y1="100" x2="165" y2="120" stroke="url(#lineGrad)" stroke-width="1" stroke-dasharray="4 3"/>
-              <line x1="100" y1="100" x2="135" y2="170" stroke="url(#lineGrad)" stroke-width="1" stroke-dasharray="4 3"/>
-              <line x1="100" y1="100" x2="35" y2="120" stroke="url(#lineGrad)" stroke-width="1" stroke-dasharray="4 3"/>
-              <defs>
-                <linearGradient id="lineGrad" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#4f8ef7" stop-opacity="0.8"/>
-                  <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.3"/>
-                </linearGradient>
-              </defs>
-            </svg>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       TECH STACK SECTION
-  ============================================================ -->
-  <section class="techstack" id="techstack">
+  <!-- PRODUCT ECOSYSTEM -->
+  <section class="section ecosystem" id="ecosystem">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-tag">技术栈</span>
-        <h2 class="section-title">我们精通的<span class="gradient-text">前沿技术</span></h2>
+        <span class="eyebrow">产品生态</span>
+        <h2 class="section-title">完整的产品矩阵</h2>
+        <p class="section-sub">模块化、可组合——按需选择，构成您专属的技术底座。</p>
       </div>
-      <div class="techstack__grid fade-in delay-1">
 
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="24" r="10" stroke="#61DAFB" stroke-width="2"/>
-            <circle cx="24" cy="24" r="3" fill="#61DAFB"/>
-            <ellipse cx="24" cy="24" rx="20" ry="8" stroke="#61DAFB" stroke-width="2"/>
-            <ellipse cx="24" cy="24" rx="20" ry="8" stroke="#61DAFB" stroke-width="2" transform="rotate(60 24 24)"/>
-            <ellipse cx="24" cy="24" rx="20" ry="8" stroke="#61DAFB" stroke-width="2" transform="rotate(-60 24 24)"/>
-          </svg>
-          <span>React</span>
+      <div class="eco-grid">
+
+        <div class="eco-card eco-card--featured fade-in delay-1">
+          <div class="eco-card__header">
+            <div class="eco-card__icon eco-card__icon--dark">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L20 7V17L12 22L4 17V7L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="eco-card__badge">核心</span>
+          </div>
+          <h3 class="eco-card__title">MicroArch Core</h3>
+          <p class="eco-card__desc">企业级应用框架，内置多租户、权限体系、审计日志与配置中心，开箱即用的技术底座。</p>
+          <ul class="eco-card__features">
+            <li>多租户隔离架构</li>
+            <li>RBAC 权限引擎</li>
+            <li>分布式配置中心</li>
+          </ul>
         </div>
 
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 8 L38 32 H10 Z" stroke="#4FC08D" stroke-width="2" fill="none"/>
-            <path d="M10 16 L24 40 L38 16" stroke="#4FC08D" stroke-width="2" fill="none"/>
-          </svg>
-          <span>Vue.js</span>
+        <div class="eco-card fade-in delay-2">
+          <div class="eco-card__header">
+            <div class="eco-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2C8.94 21 3 15.06 3 8a2 2 0 012-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="eco-card__title">MicroArch Flow</h3>
+          <p class="eco-card__desc">可视化工作流引擎，支持复杂的业务流程编排、人机协作与 AI 节点接入。</p>
+          <ul class="eco-card__features">
+            <li>可视化流程设计器</li>
+            <li>AI 节点编排</li>
+            <li>实时监控与审计</li>
+          </ul>
         </div>
 
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 34 C16 42 32 42 40 34 C40 26 32 18 24 14 C16 18 8 26 8 34Z" stroke="#68A063" stroke-width="2"/>
-            <circle cx="24" cy="22" r="4" fill="#68A063"/>
-            <path d="M14 40 C14 40 18 44 24 44 C30 44 34 40 34 40" stroke="#68A063" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          <span>Node.js</span>
+        <div class="eco-card fade-in delay-3">
+          <div class="eco-card__header">
+            <div class="eco-card__icon eco-card__icon--accent">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="eco-card__title">MicroArch AI</h3>
+          <p class="eco-card__desc">统一的 AI 集成层，支持多模型切换、RAG 知识增强、提示词管理与成本优化。</p>
+          <ul class="eco-card__features">
+            <li>多模型统一接入</li>
+            <li>知识库与 RAG</li>
+            <li>用量管控与计费</li>
+          </ul>
         </div>
 
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 6 L24 42 M14 16 L24 6 L34 16 M10 26 L24 12 L38 26 M8 36 L24 20 L40 36" stroke="#3776AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>Python</span>
-        </div>
-
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 24 C10 24 10 14 18 10 L24 14 L30 10 C38 14 38 24 38 24 C38 34 30 42 24 42 C18 42 10 34 10 24Z" stroke="#00ACD7" stroke-width="2"/>
-            <circle cx="24" cy="24" r="5" stroke="#00ACD7" stroke-width="2"/>
-          </svg>
-          <span>Go</span>
-        </div>
-
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="16" width="12" height="12" rx="2" stroke="#326CE5" stroke-width="2"/>
-            <rect x="28" y="8" width="12" height="12" rx="2" stroke="#326CE5" stroke-width="2"/>
-            <rect x="28" y="28" width="12" height="12" rx="2" stroke="#326CE5" stroke-width="2"/>
-            <circle cx="24" cy="24" r="4" stroke="#326CE5" stroke-width="2"/>
-            <line x1="20" y1="22" x2="28" y2="14" stroke="#326CE5" stroke-width="1.5"/>
-            <line x1="20" y1="26" x2="28" y2="34" stroke="#326CE5" stroke-width="1.5"/>
-            <line x1="20" y1="24" x2="28" y2="24" stroke="#326CE5" stroke-width="1.5"/>
-          </svg>
-          <span>Kubernetes</span>
-        </div>
-
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 8 L38 16 V32 L24 40 L10 32 V16 Z" stroke="#FF9900" stroke-width="2"/>
-            <path d="M24 8 V24 L38 16" stroke="#FF9900" stroke-width="1.5" opacity="0.6"/>
-            <path d="M10 16 L24 24 L38 16" stroke="#FF9900" stroke-width="1.5" opacity="0.6"/>
-            <path d="M24 24 V40" stroke="#FF9900" stroke-width="1.5" opacity="0.6"/>
-          </svg>
-          <span>AWS</span>
-        </div>
-
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="24" cy="14" rx="14" ry="6" stroke="#336791" stroke-width="2"/>
-            <path d="M10 14 V34 C10 37.314 16.268 40 24 40 C31.732 40 38 37.314 38 34 V14" stroke="#336791" stroke-width="2"/>
-            <path d="M10 24 C10 27.314 16.268 30 24 30 C31.732 30 38 27.314 38 24" stroke="#336791" stroke-width="2"/>
-          </svg>
-          <span>PostgreSQL</span>
-        </div>
-
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="6" y="10" width="36" height="28" rx="4" stroke="#2496ED" stroke-width="2"/>
-            <path d="M14 24 H34 M24 14 V34" stroke="#2496ED" stroke-width="2" stroke-linecap="round"/>
-            <rect x="10" y="14" width="8" height="8" rx="1" stroke="#2496ED" stroke-width="1.5"/>
-            <rect x="30" y="26" width="8" height="8" rx="1" stroke="#2496ED" stroke-width="1.5"/>
-          </svg>
-          <span>Docker</span>
-        </div>
-
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="24" r="16" stroke="#E44D26" stroke-width="2"/>
-            <path d="M14 16 L16 36 L24 38 L32 36 L34 16Z" stroke="#E44D26" stroke-width="2"/>
-            <path d="M18 22 H30 M17 28 H31 M18 22 L20 32 L24 34 L28 32 L30 22" stroke="#E44D26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>TypeScript</span>
-        </div>
-
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 12 L24 6 L40 12 L40 36 L24 42 L8 36 Z" stroke="#E34F26" stroke-width="2"/>
-            <path d="M16 20 L24 16 L32 20 L32 30 L24 34 L16 30 Z" stroke="#E34F26" stroke-width="1.5"/>
-          </svg>
-          <span>Redis</span>
-        </div>
-
-        <div class="tech-badge">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 40 L24 8 L40 40 H8Z" stroke="#F7DF1E" stroke-width="2"/>
-            <path d="M18 32 L24 20 L30 32" stroke="#F7DF1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>Next.js</span>
+        <div class="eco-card fade-in delay-1">
+          <div class="eco-card__header">
+            <div class="eco-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="eco-card__title">MicroArch Data</h3>
+          <p class="eco-card__desc">数据采集、清洗、存储到可视化的全链路数据平台，支持实时与离线混合计算。</p>
+          <ul class="eco-card__features">
+            <li>流批一体引擎</li>
+            <li>自助 BI 分析</li>
+            <li>数据质量治理</li>
+          </ul>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       CASES / PORTFOLIO SECTION
-  ============================================================ -->
-  <section class="cases" id="cases">
+  <!-- DEMO -->
+  <section class="section demo" id="demo">
+    <div class="container">
+      <div class="demo-inner">
+        <div class="demo-text fade-in">
+          <span class="eyebrow">体验演示</span>
+          <h2 class="section-title" style="text-align:left;">智能接口，<br/>实时响应</h2>
+          <p class="section-sub" style="text-align:left; max-width:400px;">
+            通过标准化的接口与 SDK，任何系统都可以在分钟级接入
+            MicroArch AI 能力，无需了解底层模型细节。
+          </p>
+          <a href="#cta" class="btn btn--dark" style="margin-top:32px;">申请接入</a>
+        </div>
+
+        <div class="demo-terminal fade-in delay-2">
+          <div class="terminal__bar">
+            <span class="terminal__dot t-red"></span>
+            <span class="terminal__dot t-yellow"></span>
+            <span class="terminal__dot t-green"></span>
+            <span class="terminal__title">microarch-sdk — demo</span>
+          </div>
+          <div class="terminal__body">
+            <div class="t-line"><span class="t-comment"># 初始化 MicroArch AI 客户端</span></div>
+            <div class="t-line"><span class="t-kw">from</span> <span class="t-id">microarch</span> <span class="t-kw">import</span> <span class="t-id">AIClient</span></div>
+            <div class="t-line">&nbsp;</div>
+            <div class="t-line"><span class="t-id">client</span> <span class="t-op">=</span> <span class="t-id">AIClient</span><span class="t-op">(</span></div>
+            <div class="t-line"><span class="t-str">&nbsp;&nbsp;api_key</span><span class="t-op">=</span><span class="t-str">"ma_live_xxxxxx"</span><span class="t-op">,</span></div>
+            <div class="t-line"><span class="t-str">&nbsp;&nbsp;workspace</span><span class="t-op">=</span><span class="t-str">"acme-corp"</span></div>
+            <div class="t-line"><span class="t-op">)</span></div>
+            <div class="t-line">&nbsp;</div>
+            <div class="t-line"><span class="t-comment"># 调用知识库增强对话</span></div>
+            <div class="t-line"><span class="t-id">response</span> <span class="t-op">=</span> <span class="t-id">client</span><span class="t-op">.</span><span class="t-fn">chat</span><span class="t-op">(</span></div>
+            <div class="t-line"><span class="t-str">&nbsp;&nbsp;query</span><span class="t-op">=</span><span class="t-str">"分析本季度销售趋势"</span><span class="t-op">,</span></div>
+            <div class="t-line"><span class="t-str">&nbsp;&nbsp;knowledge_base</span><span class="t-op">=</span><span class="t-str">"sales-reports"</span></div>
+            <div class="t-line"><span class="t-op">)</span></div>
+            <div class="t-line">&nbsp;</div>
+            <div class="t-line"><span class="t-comment"># 输出结构化结果</span></div>
+            <div class="t-line"><span class="t-kw">print</span><span class="t-op">(</span><span class="t-id">response</span><span class="t-op">.</span><span class="t-fn">answer</span><span class="t-op">)</span></div>
+            <div class="t-line t-output"><span class="t-comment">→ 本季度整体销售额同比增长 23.4%，</span></div>
+            <div class="t-line t-output"><span class="t-comment">&nbsp;&nbsp;华南区贡献主要增量，建议...</span></div>
+            <div class="t-cursor"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="section partners" id="partners">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-tag">成功案例</span>
-        <h2 class="section-title">我们交付的<span class="gradient-text">卓越成果</span></h2>
-        <p class="section-sub">每一个项目都是我们对技术与商业理解的结晶。以下是我们引以为豪的部分案例。</p>
+        <span class="eyebrow">合作伙伴</span>
+        <h2 class="section-title">信任我们的企业</h2>
+        <p class="section-sub">我们与各行业领军企业深度合作，共同构建下一代数字基础设施。</p>
       </div>
 
-      <div class="cases__grid">
-
-        <div class="case-card fade-in delay-1">
-          <div class="case-card__image">
-            <div class="case-card__image-bg case-card__image-bg--1">
-              <svg class="case-card__illustration" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="20" y="20" width="360" height="220" rx="12" fill="rgba(79,142,247,0.08)" stroke="rgba(79,142,247,0.3)" stroke-width="1"/>
-                <rect x="40" y="40" width="140" height="90" rx="8" fill="rgba(79,142,247,0.15)" stroke="rgba(79,142,247,0.4)" stroke-width="1"/>
-                <rect x="200" y="40" width="160" height="40" rx="6" fill="rgba(79,142,247,0.1)" stroke="rgba(79,142,247,0.3)" stroke-width="1"/>
-                <rect x="200" y="92" width="160" height="38" rx="6" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
-                <rect x="40" y="150" width="320" height="70" rx="8" fill="rgba(0,212,255,0.06)" stroke="rgba(0,212,255,0.25)" stroke-width="1"/>
-                <path d="M60 185 L100 175 L140 190 L180 170 L220 180 L260 165 L300 178 L340 168" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="100" cy="175" r="3" fill="#4f8ef7"/>
-                <circle cx="180" cy="170" r="3" fill="#4f8ef7"/>
-                <circle cx="260" cy="165" r="3" fill="#4f8ef7"/>
-              </svg>
-            </div>
-            <div class="case-card__overlay">
-              <span class="case-card__category">企业软件</span>
-            </div>
-          </div>
-          <div class="case-card__body">
-            <h3 class="case-card__title">智慧供应链管理平台</h3>
-            <p class="case-card__desc">为某头部制造企业打造的端到端供应链可视化平台，集成 ERP、WMS 及实时数据分析，显著提升库存周转效率。</p>
-            <div class="case-card__meta">
-              <div class="case-card__tags">
-                <span>React</span><span>Node.js</span><span>PostgreSQL</span>
-              </div>
-              <div class="case-card__stats">
-                <span>效率提升 <strong>40%</strong></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="case-card fade-in delay-2">
-          <div class="case-card__image">
-            <div class="case-card__image-bg case-card__image-bg--2">
-              <svg class="case-card__illustration" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="120" y="20" width="160" height="290" rx="20" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
-                <rect x="135" y="50" width="130" height="80" rx="8" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
-                <rect x="140" y="145" width="60" height="8" rx="4" fill="rgba(124,58,237,0.4)"/>
-                <rect x="140" y="162" width="120" height="6" rx="3" fill="rgba(124,58,237,0.2)"/>
-                <rect x="140" y="176" width="90" height="6" rx="3" fill="rgba(124,58,237,0.2)"/>
-                <rect x="140" y="198" width="120" height="34" rx="8" fill="rgba(124,58,237,0.3)" stroke="rgba(124,58,237,0.5)" stroke-width="1"/>
-                <circle cx="200" cy="240" r="8" stroke="rgba(124,58,237,0.4)" stroke-width="2"/>
-              </svg>
-            </div>
-            <div class="case-card__overlay">
-              <span class="case-card__category">移动应用</span>
-            </div>
-          </div>
-          <div class="case-card__body">
-            <h3 class="case-card__title">金融理财 App</h3>
-            <p class="case-card__desc">面向 C 端用户的财富管理应用，支持基金、股票及固定收益产品，内置 AI 智能投顾功能，用户留存率大幅提升。</p>
-            <div class="case-card__meta">
-              <div class="case-card__tags">
-                <span>Flutter</span><span>Python</span><span>AI</span>
-              </div>
-              <div class="case-card__stats">
-                <span>用户留存 <strong>+62%</strong></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="case-card fade-in delay-3">
-          <div class="case-card__image">
-            <div class="case-card__image-bg case-card__image-bg--3">
-              <svg class="case-card__illustration" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="200" cy="130" r="60" fill="rgba(0,212,255,0.06)" stroke="rgba(0,212,255,0.25)" stroke-width="1"/>
-                <circle cx="200" cy="130" r="40" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.3)" stroke-width="1"/>
-                <circle cx="200" cy="130" r="20" fill="rgba(0,212,255,0.15)" stroke="rgba(0,212,255,0.4)" stroke-width="1"/>
-                <circle cx="200" cy="130" r="5" fill="#00d4ff"/>
-                <circle cx="110" cy="80" r="18" fill="rgba(79,142,247,0.12)" stroke="rgba(79,142,247,0.4)" stroke-width="1"/>
-                <circle cx="290" cy="80" r="18" fill="rgba(79,142,247,0.12)" stroke="rgba(79,142,247,0.4)" stroke-width="1"/>
-                <circle cx="110" cy="180" r="18" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
-                <circle cx="290" cy="180" r="18" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
-                <line x1="128" y1="80" x2="160" y2="110" stroke="rgba(0,212,255,0.4)" stroke-width="1" stroke-dasharray="4 3"/>
-                <line x1="272" y1="80" x2="240" y2="110" stroke="rgba(0,212,255,0.4)" stroke-width="1" stroke-dasharray="4 3"/>
-                <line x1="128" y1="180" x2="160" y2="150" stroke="rgba(0,212,255,0.4)" stroke-width="1" stroke-dasharray="4 3"/>
-                <line x1="272" y1="180" x2="240" y2="150" stroke="rgba(0,212,255,0.4)" stroke-width="1" stroke-dasharray="4 3"/>
-              </svg>
-            </div>
-            <div class="case-card__overlay">
-              <span class="case-card__category">云原生 & AI</span>
-            </div>
-          </div>
-          <div class="case-card__body">
-            <h3 class="case-card__title">医疗 AI 诊断辅助系统</h3>
-            <p class="case-card__desc">基于深度学习的医学影像分析平台，部署于私有云环境，辅助医生快速识别病灶，已在多家三甲医院落地应用。</p>
-            <div class="case-card__meta">
-              <div class="case-card__tags">
-                <span>Python</span><span>Kubernetes</span><span>CV</span>
-              </div>
-              <div class="case-card__stats">
-                <span>准确率 <strong>96.8%</strong></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div class="partners-grid fade-in delay-1">
+        <div class="partner-logo"><span>制造集团 A</span></div>
+        <div class="partner-logo"><span>金融机构 B</span></div>
+        <div class="partner-logo"><span>医疗集团 C</span></div>
+        <div class="partner-logo"><span>零售品牌 D</span></div>
+        <div class="partner-logo"><span>物流企业 E</span></div>
+        <div class="partner-logo"><span>科技公司 F</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       CTA BANNER
-  ============================================================ -->
-  <section class="cta-banner fade-in" id="contact">
-    <div class="cta-banner__bg">
-      <div class="cta-banner__orb cta-banner__orb--1"></div>
-      <div class="cta-banner__orb cta-banner__orb--2"></div>
-    </div>
-    <div class="container cta-banner__inner">
-      <div class="cta-banner__text">
-        <h2 class="cta-banner__title">准备好开始您的<br/><span class="gradient-text">数字化转型</span>了吗？</h2>
-        <p class="cta-banner__sub">让我们的专家团队为您量身定制解决方案，从今天开始构建明天的竞争优势。</p>
-      </div>
-      <div class="cta-banner__actions">
-        <a href="mailto:contact@microarch.cn" class="btn btn--primary btn--lg">立即联系我们</a>
-        <div class="cta-banner__contact-info">
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92V19.92C22 20.4704 21.7893 20.9996 21.4142 21.3747C21.0391 21.7498 20.5099 21.9604 19.96 21.96C16.4235 21.5856 13.0177 20.3629 10.06 18.4C7.30049 16.6314 4.96867 14.2996 3.2 11.54C1.27997 8.57043 0.0567093 5.14879 -0.0399994 1.6C-0.0408271 1.05118 0.169357 0.52285 0.543477 0.147889C0.917597 -0.227072 1.44534 -0.43794 1.99399 -0.44C2.99399 -0.44 3.95399 -0.14 4.79399 0.44L5.87399 1.44C6.55399 2.22 6.90399 3.22 6.87399 4.24L6.84399 5.24C6.83399 5.73 6.93399 6.22 7.14399 6.66L7.90399 8.18C8.22399 8.83 8.75399 9.36 9.41399 9.68L10.92 10.44C11.36 10.65 11.85 10.75 12.34 10.74L13.34 10.71C14.36 10.68 15.36 11.03 16.14 11.71L17.14 12.79C17.72 13.63 18.02 14.59 18.02 15.59V15.59C18.02 16.14 17.81 16.67 17.43 17.04C17.05 17.41 16.53 17.62 15.98 17.62H12.98C12.43 17.62 11.9 17.41 11.53 17.04" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>+86 755 1234 5678</span>
-          </div>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>contact@microarch.cn</span>
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta__inner fade-in">
+        <div class="cta__text">
+          <h2 class="cta__title">准备好构建<br/>您的智能基础设施了吗？</h2>
+          <p class="cta__sub">与我们的架构师团队预约一次深度沟通，我们将为您的业务场景提供定制化的技术路线图。</p>
+        </div>
+        <div class="cta__actions">
+          <a href="mailto:contact@microarch.cn" class="btn btn--dark btn--lg">预约架构咨询</a>
+          <div class="cta__contact">
+            <div class="cta__contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.6"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.6"/></svg>
+              <span>contact@microarch.cn</span>
+            </div>
+            <div class="cta__contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+              <span>深圳市南山区科技园</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <a href="#" class="nav__logo footer__logo">
-            <span class="nav__logo-icon">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="32" height="32" rx="8" fill="url(#logoGrad2)"/>
-                <path d="M8 12 L16 8 L24 12 L24 20 L16 24 L8 20 Z" stroke="white" stroke-width="1.5" fill="none" opacity="0.9"/>
-                <path d="M16 8 L16 24" stroke="white" stroke-width="1.5" opacity="0.5"/>
-                <path d="M8 12 L24 12" stroke="white" stroke-width="1.5" opacity="0.5"/>
-                <circle cx="16" cy="16" r="2.5" fill="white"/>
-                <defs>
-                  <linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32">
-                    <stop offset="0%" stop-color="#4f8ef7"/>
-                    <stop offset="100%" stop-color="#7c3aed"/>
-                  </linearGradient>
-                </defs>
+          <a href="#hero" class="nav__logo">
+            <span class="logo-mark">
+              <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+                <rect width="28" height="28" rx="7" fill="#111418"/>
+                <path d="M7 10 L14 7 L21 10 L21 18 L14 21 L7 18 Z" stroke="#F4F1ED" stroke-width="1.4" fill="none"/>
+                <circle cx="14" cy="14" r="2" fill="#6AA8FF"/>
               </svg>
             </span>
-            <span class="nav__logo-cn">微架构</span>
-            <span class="nav__logo-en">MicroArch</span>
+            <span class="logo-text">微架构 <em>MicroArch</em></span>
           </a>
-          <p class="footer__brand-desc">深圳市微架构科技有限公司<br/>用技术重塑商业价值</p>
-          <div class="footer__socials">
-            <a href="#" class="social-btn" aria-label="微信">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M8.5 14.25C9.88071 14.25 11 13.1307 11 11.75C11 10.3693 9.88071 9.25 8.5 9.25C7.11929 9.25 6 10.3693 6 11.75C6 13.1307 7.11929 14.25 8.5 14.25Z" stroke="currentColor" stroke-width="1.5"/><path d="M15.5 13.25C16.3284 13.25 17 12.5784 17 11.75C17 10.9216 16.3284 10.25 15.5 10.25C14.6716 10.25 14 10.9216 14 11.75C14 12.5784 14.6716 13.25 15.5 13.25Z" stroke="currentColor" stroke-width="1.5"/><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"/></svg>
-            </a>
-            <a href="#" class="social-btn" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M9 19C4.7 20.4 4.7 16.5 3 16M15 21V17.5C15 16.5 15.1 16.1 14.5 15.5C17.3 15.2 20 14.1 20 9.49995C19.9988 8.30492 19.5325 7.15726 18.7 6.29995C19.0905 5.26192 19.0545 4.11158 18.6 3.09995C18.6 3.09995 17.5 2.79995 15.1 4.39995C13.0672 3.87054 10.9328 3.87054 8.9 4.39995C6.5 2.79995 5.4 3.09995 5.4 3.09995C4.94548 4.11158 4.90953 5.26192 5.3 6.29995C4.46745 7.15726 4.00122 8.30492 4 9.49995C4 14.1 6.7 15.2 9.5 15.5C8.9 16.1 8.9 16.7 9 17.5V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a href="#" class="social-btn" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
-            </a>
-          </div>
+          <p class="footer__desc">深圳市微架构科技有限公司<br/>智能基础设施的构建者</p>
         </div>
 
-        <div class="footer__links-group">
-          <h4>服务</h4>
-          <ul>
-            <li><a href="#services">企业软件开发</a></li>
-            <li><a href="#services">移动应用开发</a></li>
-            <li><a href="#services">云原生架构</a></li>
-            <li><a href="#services">AI 智能解决方案</a></li>
-            <li><a href="#services">大数据平台</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__links-group">
-          <h4>公司</h4>
-          <ul>
-            <li><a href="#about">关于我们</a></li>
-            <li><a href="#cases">成功案例</a></li>
-            <li><a href="#techstack">技术栈</a></li>
-            <li><a href="#contact">联系我们</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__contact-group">
-          <h4>联系我们</h4>
-          <div class="footer__contact-item">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
-            <span>广东省深圳市南山区科技园<br/>科兴科学园 B3 栋 15 层</span>
+        <div class="footer__nav">
+          <div class="footer__nav-group">
+            <h4>产品</h4>
+            <a href="#ecosystem">MicroArch Core</a>
+            <a href="#ecosystem">MicroArch Flow</a>
+            <a href="#ecosystem">MicroArch AI</a>
+            <a href="#ecosystem">MicroArch Data</a>
           </div>
-          <div class="footer__contact-item">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92V19.92C22.0011 20.4833 21.7601 21.021 21.335 21.3991C20.9098 21.7772 20.3433 21.9627 19.77 21.91C16.2996 21.6025 12.9833 20.406 10.09 18.44C7.39441 16.6388 5.1042 14.3487 3.30303 11.653C1.32879 8.74605 0.131843 5.40921 -0.169986 1.92C-0.222944 1.34853 -0.0382023 0.78336 0.337928 0.359196C0.714059 -0.0649684 1.25064 -0.306053 1.81003 -0.310004H4.81003C5.82003 -0.320004 6.68003 0.400003 6.82003 1.4L7.47003 4.72C7.54386 5.16295 7.41403 5.6146 7.12003 5.95L5.69003 7.39C7.36028 10.1827 9.60681 12.4293 12.3 14.1L13.74 12.67C14.0754 12.376 14.527 12.2462 14.97 12.32L18.29 12.97C19.3 13.11 20.02 13.98 20.01 15V15L22 16.92Z" stroke="currentColor" stroke-width="1.5"/></svg>
-            <span>+86 755 1234 5678</span>
+          <div class="footer__nav-group">
+            <h4>能力</h4>
+            <a href="#capabilities">企业智能系统</a>
+            <a href="#capabilities">云原生基础设施</a>
+            <a href="#capabilities">AI 集成引擎</a>
+            <a href="#capabilities">架构咨询</a>
           </div>
-          <div class="footer__contact-item">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5"/></svg>
-            <span>contact@microarch.cn</span>
+          <div class="footer__nav-group">
+            <h4>公司</h4>
+            <a href="#cta">联系我们</a>
+            <a href="#partners">合作伙伴</a>
+            <a href="#">隐私政策</a>
+            <a href="#">粤ICP备XXXXXXXX号</a>
           </div>
         </div>
       </div>
 
       <div class="footer__bottom">
-        <p>© 2024 深圳市微架构科技有限公司 MicroArch Technology Co., Ltd. All rights reserved.</p>
-        <div class="footer__bottom-links">
-          <a href="#">隐私政策</a>
-          <a href="#">服务条款</a>
-          <a href="#">粤ICP备XXXXXXXX号</a>
-        </div>
+        <p>© 2024 深圳市微架构科技有限公司 MicroArch Technology Co., Ltd.</p>
+        <p style="color: var(--text-3);">All rights reserved.</p>
       </div>
     </div>
   </footer>
