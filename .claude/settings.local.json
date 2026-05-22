@@ -1,11 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(open *)"
+      "Bash(open *)",
+      "mcp__plugin_telegram_telegram__reply"
     ]
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "playwright"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }
