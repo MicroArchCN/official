@@ -3,5 +3,9 @@
     "allow": [
       "Bash(open *)"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
+  "enableAllProjectMcpServers": true
 }
