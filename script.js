@@ -172,6 +172,8 @@ function updateAudioBtn(playing) {
 }
 
 if (audioBtn) {
+  // Prevent touchstart from bubbling to document (would double-toggle via firstTouch)
+  audioBtn.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
   audioBtn.addEventListener('click', () => {
     const on = audioSystem.toggle();
     updateAudioBtn(on);
