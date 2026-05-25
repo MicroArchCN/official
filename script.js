@@ -109,8 +109,8 @@ const audioSystem = (() => {
 
     const flt = ac.createBiquadFilter();
     flt.type = 'lowpass';
-    flt.frequency.value = 700;
-    flt.Q.value = 0.4;
+    flt.frequency.value = 2200;
+    flt.Q.value = 0.5;
     flt.connect(mg);
 
     // Delay echo
@@ -121,14 +121,14 @@ const audioSystem = (() => {
     dly.connect(dfb); dfb.connect(dly);
     dly.connect(dmx); dmx.connect(flt);
 
-    // A-minor chord drone: A1 C2 E2 A2 E3
-    [55, 65.4, 82.4, 110, 164.8].forEach((f, i) => {
+    // A-minor chord drone: A3 C4 E4 A4 E5 (phone-speaker-safe, 220Hz+)
+    [220, 261.6, 329.6, 440, 659.3].forEach((f, i) => {
       const o1 = ac.createOscillator();
       const o2 = ac.createOscillator();
       const gn = ac.createGain();
       o1.type = 'sine';  o1.frequency.value = f;
       o2.type = 'sine';  o2.frequency.value = f * 1.004;
-      gn.gain.value = 0.16 / 5;
+      gn.gain.value = 0.13 / 5;
       o1.connect(gn); o2.connect(gn);
       gn.connect(flt); gn.connect(dly);
 
