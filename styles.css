@@ -162,40 +162,6 @@ svg { display: block; flex-shrink: 0; }
 .btn--sm  { padding: 8px 16px; font-size: 10px; }
 
 /* ================================================================
-   AUDIO BUTTON
-   ================================================================ */
-.audio-btn {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  z-index: 200;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 1px solid rgba(0,212,255,0.4);
-  background: rgba(5,8,16,0.85);
-  backdrop-filter: blur(12px);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--cyan);
-  transition: all 0.22s ease;
-  box-shadow: 0 0 14px rgba(0,212,255,0.15);
-}
-.audio-btn:hover {
-  box-shadow: 0 0 28px rgba(0,212,255,0.4);
-  transform: scale(1.08);
-}
-.audio-btn.playing {
-  animation: audioPulse 2.5s ease-in-out infinite;
-}
-@keyframes audioPulse {
-  0%,100% { box-shadow: 0 0 14px rgba(0,212,255,0.2); }
-  50%      { box-shadow: 0 0 32px rgba(0,212,255,0.55), 0 0 60px rgba(0,212,255,0.2); }
-}
-
-/* ================================================================
    NAV
    ================================================================ */
 .nav {
@@ -987,7 +953,6 @@ svg { display: block; flex-shrink: 0; }
   .footer__bottom { flex-direction: column; align-items: flex-start; }
 
   .section-title { font-size: clamp(24px, 6.5vw, 36px); }
-  .audio-btn { bottom: 18px; right: 18px; width: 42px; height: 42px; }
 }
 
 @media (max-width: 480px) {
