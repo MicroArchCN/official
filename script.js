@@ -203,3 +203,19 @@ qsa('.cap-card, .case-card, .pain-card, .usp-card').forEach(card => {
   });
   card.addEventListener('mouseleave', () => { card.style.transform = ''; });
 });
+
+/* ================================================================
+   MEDIA MODAL
+   ================================================================ */
+const mediaModal    = qs('#mediaModal');
+const mediaBtn      = qs('#mediaBtn');
+const mediaClose    = qs('#mediaClose');
+const mediaBackdrop = qs('#mediaBackdrop');
+
+function openMedia()  { mediaModal.classList.add('open'); document.body.style.overflow = 'hidden'; }
+function closeMedia() { mediaModal.classList.remove('open'); document.body.style.overflow = ''; }
+
+if (mediaBtn)      mediaBtn.addEventListener('click', openMedia);
+if (mediaClose)    mediaClose.addEventListener('click', closeMedia);
+if (mediaBackdrop) mediaBackdrop.addEventListener('click', closeMedia);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMedia(); });
